@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/mui.css"/>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/slidenews.css" />
+    <!--<link rel="stylesheet" type="text/css" href="../css/app.css"/>-->
+   	<link rel="stylesheet" href="../css/iconfont.css" />
+   	<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+   	<script type="text/javascript" src="../js/jquery1.42.min.js" ></script>
+   	<script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js" ></script>
+</head>
+
+	<style type="text/css">
+		
+		/*.mui-slider{
+			height: 150px;
+		}*/
+		.mui-title-bg{
+			background-color: rgb(255,255,255);
+		}
+		.mui-title-header{
+			background: transparent;
+		}
+		
+		.mui-right-menu-test{
+			position: relative;
+			right: 0;
+			top: 0;
+			height: 90px;
+			width: 80px;
+		}
+		.mui-table-view:after{
+			background-color: #FFFFFF;
+		}
+		
+		.mui-table-view.mui-grid-view{
+			padding: 0;
+		}
+		
+		.mui-scroll{
+			position: static;
+		}
+		/*.mui-table-view-cell{
+			padding: 0;
+		}*/
+		
+		.mui-grid-view.mui-grid-9 .mui-table-view-cell{
+			background-color: #fff;
+			border-right:1px,solid,#fff;
+			border-bottom: 1px solid #fff;
+		}
+		
+		.mui-bar{
+			border-bottom: 1px solid transparent;
+			webkit-box-shadow: 0 0 1px rgba(255,255,255,0.0);
+			box-shadow: 0 0 1px rgba(255,255,255,0)
+		}
+		
+		.mui-bar-nav{
+			box-shadow: 0px,0px,0px,transparent;
+			webkit-box-shadow: 0 1px 6px #fff0;
+		}
+
+	</style>
+
+<body>
+		
+    		
+	        
+	       <div class="mui-content">
+	       	
+	       	
+	       	
+			<!--这里放置真实显示的DOM内容-->
+			 
+	       	<header class="mui-bar mui-bar-nav mui-title-header">
+	      
+	   			<div id="container">  
+	            <div id="left_side" class="left_side"><p><!--<img src="../img/mainmall/logo_01.png"></img>-->
+	            	<span class="mui-icon iconfont icon-logo" ></span>
+	            </p></div>  
+	            <div id="content" class="content">
+	            	<div class="search">
+				      <div class="search_w">
+				          <input type="text" id="searchoptiontxt" value="请输入搜索关键字"  />
+				      </div>
+				  	</div>
+	            </div>  
+	            <div id="right_side" class="right_side">
+	            	<a class="mui-icon iconfont icon-xiaoxi1 "></a>
+	            </div>  
+	        	</div>  
+	            
+	        </header>
+			
+			
+			
+			
+			<div class="mui-scroll-wrapper">
+			    <div class="mui-scroll">
+			
+			<div id="slider" class="mui-slider ">
+								<div  id="loopslide" class="mui-slider-group mui-slider-loop ">
+									
+									 
+									
+								</div>
+								<div class="mui-slider-indicator mui-text-center" id="sliderindicator">
+									<!--<div class="mui-indicator mui-active"></div>
+									<div class="mui-indicator"></div>-->
+								</div>
+							</div>
+						<!--</div>-->
+					     
+					        
+							        <div class="nav_mian gray_line white_bg" >
+							    <!--<ul class="mui-table-view mui-grid-view nav_mian menu-back-line">
+							        <li class="mui-table-view-cell mui-media mui-col-xs-3 ">
+							            <a href="#" >
+							                <div class="nav_img nav_bg1"><img class="mui-media-object" src="../img/f_img_05.png"></div>
+							                <div class="mui-media-body textinfo">化肥农药</div>
+							            </a>
+							        </li>
+							        <li class="mui-table-view-cell mui-media mui-col-xs-3 ">
+							            <a href="#">
+							                <div class="nav_img nav_bg1"><img class="mui-media-object" src="../img/f_img_05.png"></div>
+							                <div class="mui-media-body textinfo">化肥农药</div>
+							            </a>
+							        </li>
+							        
+							        <li class="mui-table-view-cell mui-media mui-col-xs-3 ">
+							            <a href="#" >
+							               <div class="nav_img nav_bg1"> <img class="mui-media-object" src="../img/f_img_05.png"></div>
+							                <div class="mui-media-body textinfo">化肥农药</div>
+							            </a>
+							        </li>
+							        <li class="mui-table-view-cell mui-media mui-col-xs-3 ">
+							            <a href="#">
+							                <div class="nav_img nav_bg1"> <img class="mui-media-object" src="../img/f_img_05.png"></div> 
+							                <div class="mui-media-body textinfo" >化肥农药</div>
+							            </a>
+							        </li>
+							    </ul>
+							    
+							    <ul class="mui-table-view mui-grid-view nav_mian menu-back-line">
+							        <li class="mui-table-view-cell mui-media mui-col-xs-3 ">
+							            <a href="#" >
+							                <div class="nav_img nav_bg1"><img class="mui-media-object" src="../img/f_img_05.png"></div>
+							                <div class="mui-media-body textinfo">化肥农药</div>
+							            </a>
+							        </li>
+							        <li class="mui-table-view-cell mui-media mui-col-xs-3 ">
+							            <a href="#">
+							                <div class="nav_img nav_bg1"><img class="mui-media-object" src="../img/f_img_05.png"></div>
+							                <div class="mui-media-body textinfo">化肥农药</div>
+							            </a>
+							        </li>
+							        
+							        <li class="mui-table-view-cell mui-media mui-col-xs-3 ">
+							            <a href="#" >
+							               <div class="nav_img nav_bg1"> <img class="mui-media-object" src="../img/f_img_05.png"></div>
+							                <div class="mui-media-body textinfo">化肥农药</div>
+							            </a>
+							        </li>
+							        <li class="mui-table-view-cell mui-media mui-col-xs-3 ">
+							            <a href="#">
+							                <div class="nav_img nav_bg1"> <img class="mui-media-object" src="../img/f_img_05.png"></div> 
+							                <div class="mui-media-body textinfo" >化肥农药</div>
+							            </a>
+							        </li>
+							    </ul>-->
+						    </div>
+						    
+						    <div class="new_warp"> 
+						    
+						      <div class="new_cont">
+						          <div class="txtMarquee-top">
+			<div class="hd">
+				<a class="next"></a>
+				<a class="prev"></a>
+			</div>
+			<div class="bd">
+				<ul class="infoList">
+					<li><a href="#" target="_blank">中国打破了世界软件巨头规则</a></li>
+					<li><a href="#" target="_blank">口语：会说中文就能说英语！</a></li>
+					<li><a href="#" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+					<li><a href="#" target="_blank">数理化老师竟也看学习资料？</a></li>
+					<li><a href="#" target="_blank">学英语送ipad2,45天突破听说</a></li>
+					<li><a href="#" target="_blank">学外语，上北外！</a></li>
+					<li><a href="#" target="_blank">那些无法理解的荒唐事</a></li>
+				</ul>
+			</div>
+		</div>
+						      </div>
+				  			</div>
+  			
+  							
+					<!--热销-->
+					<div class="best_sellers white_bg mag_bottom ">
+						<div class="lefttopdiv"></div>
+				
+					    <div class="best_setitle">
+					    	<span></span>
+					    	<p>热销新品</p>
+					    </div>
+					    
+					    <div class="bext_list white_bg">
+						    <ul class="mui-table-view mui-grid-view mui-grid-9 w">
+						    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4 class="white_bg"">
+						        <a href="#" >
+						            <dl >
+					                    <dt><img src="../img/mainmall/cp1_03.png"/></dt>
+					                    <dd>
+					                        <p class="controllinemax">英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span></p>
+					                    </dd>
+					                </dl>
+						        </a>
+						    </li>
+						    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4 ">
+						        <a href="#">
+						            <dl>
+					                    <dt><img src="../img/mainmall/cp1_03.png"/></dt>
+					                    <dd>
+					                        <p class="controllinemax">英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span></p>
+					                    </dd>
+					                </dl>
+						        </a>
+						    </li>
+						    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4 ">
+						        <a href="#">
+						            <dl>
+					                    <dt><img src="../img/mainmall/cp1_03.png"/></dt>
+					                    <dd>
+					                        <p class="controllinemax">英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span></p>
+					                    </dd>
+					                </dl>
+						        </a>
+						    </li>
+						   
+						   
+						  </ul>
+					    </div>
+  					</div>	
+  					
+  					
+  					<!--广告-->
+					<div class="banner_w mag_bottom"><img src="../img/mainmall/banner_x_06.png"  /> </div>
+					
+					
+					<!--楼层-->
+					<div class="foor_warp white_bg">
+					    <div class="best_setitle"><span></span><p>热销新品</p><em>更多</em></div>
+					    <div class="foor_classw">
+					        <div class="foor_l">  <img src="../img/mainmall/primg_11.png" /> </div>
+					        <div class="foor_r">
+					            <ul>
+					                <li><a href="#">复合肥 </a></li> <li><a href="#">复合肥 </a></li> <li><a href="#">复合肥 </a></li> <li><a href="#">复合肥 </a></li>
+					                <li><a href="#">复合肥 </a></li> <li><a href="#">复合肥 </a></li>
+					            </ul>
+					        </div>
+					    </div>
+					    <div class="foor_list">
+					        <ul>
+					            <li >
+					                <dl>
+					                    <dt><img src="../img/mainmall/cp1_03.png"  /></dt>
+					                    <dd>
+					                        <p>英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span></p>
+					                    </dd>
+					                </dl>
+					
+					            </li>
+					            <li >
+					                <dl>
+					                    <dt><img src="../img/mainmall/cp1_03.png"/></dt>
+					                    <dd>
+					                        <p>英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span></p>
+					                    </dd>
+					                </dl>
+					
+					            </li>
+					            <li class="nob_right">
+					                <dl>
+					                    <dt><img src="../img/mainmall/cp1_03.png"/></dt>
+					                    <dd>
+					                        <p>英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span></p>
+					                    </dd>
+					                </dl>
+					
+					            </li>
+					        </ul>
+					    </div>
+					</div>
+					
+					
+					<!--猜你喜欢-->
+					<div class="like_warp">
+					    <div class="like_title"><p>猜你喜欢</p></div>
+					    <div class="like_list">
+					        <ul>
+					            <li >
+					                <dl>
+					                    <dt><img src="../img/mainmall/cpimg_09.png" /></dt>
+					                    <dd>
+					                        <p>英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span><font>255人付款</font></p>
+					                    </dd>
+					                </dl>
+					
+					            </li>
+					            <li >
+					                <dl>
+					                    <dt><img src="../img/mainmall/cpimg_09.png" /></dt>
+					                    <dd>
+					                        <p>英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span><font>255人付款</font></p>
+					                    </dd>
+					                </dl>
+					
+					            </li>
+					            <li >
+					                <dl>
+					                    <dt><img src="../img/mainmall/cpimg_09.png" /></dt>
+					                    <dd>
+					                        <p>英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span><font>255人付款</font></p>
+					                    </dd>
+					                </dl>
+					
+					            </li>
+					            <li >
+					                <dl>
+					                    <dt><img src="../img/mainmall/cpimg_09.png" /></dt>
+					                    <dd>
+					                        <p>英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span><font>255人付款</font></p>
+					                    </dd>
+					                </dl>
+					
+					            </li>
+					            <li >
+					                <dl>
+					                    <dt><img src="../img/mainmall/cpimg_09.png" /></dt>
+					                    <dd>
+					                        <p>英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span><font>255人付款</font></p>
+					                    </dd>
+					                </dl>
+					
+					            </li>
+					            <li >
+					                <dl>
+					                    <dt><img src="../img/mainmall/cpimg_09.png" /></dt>
+					                    <dd>
+					                        <p>英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span><font>255人付款</font></p>
+					                    </dd>
+					                </dl>
+					
+					            </li>
+					            <li >
+					                <dl>
+					                    <dt><img src="../img/mainmall/cpimg_09.png" /></dt>
+					                    <dd>
+					                        <p>英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span><font>255人付款</font></p>
+					                    </dd>
+					                </dl>
+					
+					            </li>
+					            <li >
+					                <dl>
+					                    <dt><img src="../img/mainmall/cpimg_09.png" /></dt>
+					                    <dd>
+					                        <p>英伦风女鞋2016学院风套脚流苏高跟鞋</p>
+					                        <p><span>￥99.9</span><font>255人付款</font></p>
+					                    </dd>
+					                </dl>
+					
+					            </li>
+					        </ul>
+							<button type="button"  id = "ajaxbtn" class="mui-btn mui-btn-green mui-btn-outlined">ajax</button>
+					    </div>
+					  	</div>
+					
+				
+	     </div>
+				</div>
+</div>
+</body>
+
+<script src="../js/mui.min.js"></script>
+	<script>
+		
+		
+		//request netdata
+		var reqUrl = "http://192.168.1.111:888/Leather/Home/AjaxService/SelSlideMainData.ashx";
+		var data = {
+			IndustryID:2,
+			CompanyID:-100,
+			SiteID:1,
+			LevelID:3
+		}
+		
+		mui.init({
+			swipeBack:false //启用右滑关闭功能
+		});
+		
+		
+		mui('.mui-scroll-wrapper').scroll({
+			 scrollY: true,
+			  scrollX: false,
+			   startX: 0,
+			    startY: 0, 
+			     indicators: true,
+			     deceleration:0.0006,
+			      bounce: true
+		});
+		
+		
+		mui.plusReady(function () {
+//		    plus.nativeUI.closeWaiting();
+//		    //显示当前页面
+//		    mui.currentWebview.show();
+			var sInputOptionsTx = document.getElementById("searchoptiontxt");
+			sInputOptionsTx.addEventListener("tap",searClick,false);
+			var curWebView = plus.webview.currentWebview();
+			
+			function searClick(){
+//					sInputOptionsTx.value = ""
+					console.log("tap-----");
+					mui.openWindow({
+						url:"../Home/mainhomesearch.html",
+						id:'mainhomesearch',
+	//					waiting{
+	//						autoShow:false
+	//					},
+						createNew:false
+					});
+	//				curWebView.clo;
+				}
+			});
+		
+		function getNetDataCallback(cData){
+			var slideLoopDiv = document.getElementById("loopslide");
+			
+			var slideindcator = document.getElementById("sliderindicator");
+			if(cData.length > 1){
+				var divHtml = '<div class="mui-slider-item mui-slider-item-duplicate ">\
+										<a href="#">\
+											<img src="'+ commUrl + ":" + commPort + cData[cData.length-1].ImgSRC+'">\
+										</a>\
+									</div>';
+				for (var i = 0; i< cData.length; i++) {
+//					console.log("i----" + i);
+					var divNew = '<div class="mui-slider-item">\
+										<a href="#">\
+											<img src="'+ commUrl + ":" + commPort + cData[i].ImgSRC+'">\
+										</a>\
+									</div>';
+					divHtml += divNew;
+				}
+				
+				divHtml += '<div class="mui-slider-item mui-slider-item-duplicate">\
+										<a href="#">\
+											<img src="'+ commUrl + ":" + commPort + cData[0].ImgSRC+'">\
+										</a>\
+									</div>';
+				slideLoopDiv.innerHTML += divHtml;
+//				console.log(divHtml);
+				
+				slideindcator.innerHTML = "";
+				for (var j = 0; j< cData.length;j++) {
+					if(j == 0 ){
+						slideindcator.innerHTML +='<div class="mui-indicator mui-active"></div>';
+					}else{
+						slideindcator.innerHTML += '<div class="mui-indicator "></div>'
+					}
+				}
+			}else{
+//				slideLoopDiv.removeChild(true);
+				var divTmp = document.createElement("div");
+				divTmp.className = "mui-slider-item";
+				divTmp.innerHTML = '<a href="#">\
+											<img src="'+ commUrl + ":" + commPort + cData[0].ImgSRC+'">\
+										</a>';
+				slideLoopDiv.appendChild(divTmp);
+				slideindcator.innerHTML +='<div class="mui-indicator mui-active"></div>';
+			}
+			
+			var slider = mui("#slider");
+				slider.slider({
+					interval: 2000
+				});
+			
+		}
+		
+//		document.getElementById("ajaxbtn").addEventListener("tap",tmpGetNetData,false);
+		tmpGetNetData();
+		function tmpGetNetData(){
+			//get net result data and println for debug
+			submitData(reqUrl,data,getNetDataCallback);
+		}
+		
+		
+		$(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:5,interTime:50});
+		
+	</script>
+</html>
